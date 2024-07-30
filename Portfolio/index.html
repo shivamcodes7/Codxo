@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0, 0, 63);
+            color: white;           
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(3, 3, 121);
+        }
+        nav ul{
+            display: flex;
+            justify-content:center ;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 25px;
+        }
+        nav ul li a{
+            text-decoration: none ;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(97, 163, 229);
+            font-size: 1.05rem;
+        } 
+        main hr{
+            border: 0;
+            background-color: aquamarine;
+            height: 1.2px;
+            margin: 40px 150px;
+        }
+        .left{
+            font-size: 2.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px;
+        }
+        .firstsection > div{
+            width:40%;
+        }
+        .leftsection{
+            font-size: 3rem;
+        }
+        .rightsection img{
+            width: 30%;
+            height: 60%;
+            margin: 80px 5px ;
+            border-radius: 90%;            
+        }
+        #element{
+            color: rgb(170,107,228);
+        }
+        .secondsection{
+            max-width: 90vw;
+            margin: auto;
+            height: 60vh;
+            text-align: center;
+        }
+        .secondsection h1{
+            font-size: 2rem;    
+        }
+        .secondsection .box{
+            background: white;
+            width: 45vw;
+            height: 1px;
+            margin: 76px 0;
+            display: flex;
+            left: -20px;
+            right: -80px;
+            text-align: center;
+            
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 90px;
+            text-align: center;
+           
+        }
+        .img-top{
+            width:50px;
+            position: relative;
+            top:-55px;
+            left:-25px;
+        }
+        .vertical-title{
+            position: relative;
+            top:45px;
+            width:150px;
+            left:-65px;
+        }
+        .img-tope{
+            width:150px;
+            position: relative;
+            top:-51px;
+            left:-70px;
+        }
+        .title{
+            position: relative;
+            top:45px;
+            width:150px;
+            left:-40px;
+        }
+        .img-l{
+            width:40px;
+            position: relative;
+            top:-60px;
+            left:-19px;
+        }
+        .text{
+            position: relative;
+            top:45px;
+            width:120px;
+            left:-40px;  
+        }
+        footer{
+            background-color: gray;
+        }
+        .footer{
+           display: flex;
+            margin: 0px 0px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer div{
+            width: 100px ;
+        }
+        footer .center{
+            text-align: center;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left">Shivam's Portfolio</div>
+          <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/"><li>About</a></li>
+                <li><a href="/"><li>Services</a></li>
+                <li><a href="/"><li>Projects</a></li>
+                <li><a href="/"><li>Contact Me</a></li>
+            </ul>
+          </div>  
+        </nav>
+    </header>
+
+    <main>
+       <section class="firstsection">
+            <div class="leftsection">
+                Hello Everyone, I am Shivam Gautam
+                & I am a
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="img.jpg" alt="Image">
+            </div>
+       </section>
+       <hr> </hr>
+       <section>
+            <section class="secondsection">
+                <h1>Work Experience</h1>
+                <div class="box">
+                    <div class="vertical">
+                        <img class="img-top" src="nair-service-scheme-logo-FA829FD6C9-seeklogo.com.png" alt="NSS logo">
+                        <div class="vertical-title">
+                            NSS Unit Leader CU (2022-Present)
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="img-tope" src="ro.png" alt="rotaractlogo">
+                        <div class="title">
+                        Vice President Rotaract CU Central (2024-Present)
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="img-l" src="c.png" alt="culogo">
+                        <div class="text">
+                            Secretary Next Gen Coders CU (2024-Present)
+                        </div>
+                    </div>
+                </div>
+            </section>
+       </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="f-first"></div>
+            <h3>Shivam's Developer Portfolio </h3>
+            <div class="f-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="center">
+                www.shivamgautam.com | All Rights Reserved
+            </div>            
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer!'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
